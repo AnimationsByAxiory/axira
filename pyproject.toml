@@ -2,20 +2,25 @@
 requires = ["setuptools>=68"]
 build-backend = "setuptools.build_meta"
 
+
 [project]
 name = "axira"
-version = "0.1.0"
-description = "Axira is a Python library used to create precise, programmed mathematical animations"
+version = "1.0.1"
+description = "Axira is a Python engine for creating precise programmed mathematical animations."
+readme = "README.md"
 requires-python = ">=3.10"
+
 dependencies = [
-    "imageio>=2.31",
-    "imageio-ffmpeg>=0.4.9",
     "Pillow>=10.0",
+    "imageio>=2.34",
+    "imageio-ffmpeg>=0.5",
     "svgpathtools>=1.6",
 ]
 
+
 [project.scripts]
 axira = "axira.cli:main"
+
 
 [tool.setuptools.packages.find]
 where = ["src"]
