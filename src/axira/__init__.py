@@ -1,4 +1,4 @@
-__version__ = "1.0.1"
+__version__ = "1.1.0"
 
 from .scene import (
     Scene,
@@ -8,6 +8,14 @@ from .scene import (
     LatexSymbolicMathWriteFunction,
     TemporalHoldFunction,
     DefaultTimeInterval,
+    DirectionalVector,
+    SpatialVectorTranslationFunction,
+    Up,
+    Down,
+    Left,
+    Right,
+    SpectralOpacityFadeOutFunction,
+    SpectralOpacityFadeInFunction,
     ExecuteSceneOperator,
 )
 
@@ -22,6 +30,14 @@ __all__ = [
     "LatexSymbolicMathWriteFunction",
     "TemporalHoldFunction",
     "DefaultTimeInterval",
+    "DirectionalVector",
+    "SpatialVectorTranslationFunction",
+    "Up",
+    "Down",
+    "Left",
+    "Right",
+    "SpectralOpacityFadeOutFunction",
+    "SpectralOpacityFadeInFunction",
     "ExecuteSceneOperator",
     "Renderer",
 ]

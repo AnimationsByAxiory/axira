@@ -12,6 +12,20 @@ from .temporal import (
     DefaultTimeInterval,
 )
 
+from .spatial import (
+    DirectionalVector,
+    SpatialVectorTranslationFunction,
+    Up,
+    Down,
+    Left,
+    Right,
+)
+
+from .spectral import (
+    SpectralOpacityFadeOutFunction,
+    SpectralOpacityFadeInFunction,
+)
+
 from .operator import ExecuteSceneOperator
 
 
@@ -23,5 +37,13 @@ __all__ = [
     "LatexSymbolicMathWriteFunction",
     "TemporalHoldFunction",
     "DefaultTimeInterval",
+    "DirectionalVector",
+    "SpatialVectorTranslationFunction",
+    "Up",
+    "Down",
+    "Left",
+    "Right",
+    "SpectralOpacityFadeOutFunction",
+    "SpectralOpacityFadeInFunction",
     "ExecuteSceneOperator",
 ]

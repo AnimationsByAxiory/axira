@@ -5,7 +5,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "axira"
-version = "1.0.1"
+version = "1.1.0"
 description = "Axira is a Python engine for creating precise programmed mathematical animations."
 readme = "README.md"
 requires-python = ">=3.10"

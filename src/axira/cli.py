@@ -8,7 +8,7 @@ from .scene import Scene
 
 
 QUALITY = {
-    "-l": {"width": 854, "height": 480, "fps": 30, "name": "Low"},
+    "-l": {"width": 848, "height": 480, "fps": 30, "name": "Low"},
     "-m": {"width": 1280, "height": 720, "fps": 30, "name": "Medium"},
     "-b": {"width": 1920, "height": 1080, "fps": 60, "name": "Big"},
     "-k": {"width": 3840, "height": 2160, "fps": 60, "name": "4K"},
@@ -63,7 +63,7 @@ def build_parser():
     parser.add_argument("scene", help="Scene class name")
 
     quality = parser.add_mutually_exclusive_group()
-    quality.add_argument("-l", "--low", action="store_const", const="-l", dest="quality", help="854x480, 30 FPS")
+    quality.add_argument("-l", "--low", action="store_const", const="-l", dest="quality", help="848x480, 30 FPS")
     quality.add_argument("-m", "--medium", action="store_const", const="-m", dest="quality", help="1280x720, 30 FPS (default)")
     quality.add_argument("-b", "--big", action="store_const", const="-b", dest="quality", help="1920x1080, 60 FPS")
     quality.add_argument("-k", "--4k", action="store_const", const="-k", dest="quality", help="3840x2160, 60 FPS")

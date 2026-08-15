@@ -1,17 +1,18 @@
+# Python cache
 __pycache__/
 *.py[cod]
 
+# Packaging
+*.egg-info/
+build/
+dist/
+
+# Virtual environments
 .venv/
 venv/
 
-dist/
-build/
-*.egg-info/
-
+# Axira cache
 .axira/
 
+# Render output
 *.mp4
-*.png
-
-.idea/
-.vscode/
